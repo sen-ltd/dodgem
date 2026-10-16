@@ -108,3 +108,10 @@ npm run literature # rebuild src/results.json from runs/
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/dodgem/
+- 📝 記事: https://qiita.com/sen-ltd/items/36cfd0b15eca2b0bb2d2
+<!-- /sen-publish:links -->
