@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dodgem — Colin Vout's car game against a perfect player</title>
+    <meta
+      name="description"
+      content="Dodgem in the browser against a perfect player. The 3×3, 4×4 and 5×5 boards are solved by retrograde analysis (240 million positions for 5×5), and the 1996 rec.games.abstract claims by Erickson, Fleury and desJardins are re-checked one by one."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23151412'/%3E%3Crect x='4' y='6' width='12' height='8' rx='2' fill='%235cc8d6'/%3E%3Crect x='18' y='16' width='8' height='12' rx='2' fill='%23ef6b7b'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Dodgem <span>Colin Vout's car game</span></h1>
+        <p class="sub">
+          <strong class="v">Blue</strong> drives right, up or down and leaves over the right edge;
+          <strong class="h">Red</strong> drives up, left or right and leaves over the top. Get all your cars off to
+          win — but a move that leaves your opponent <strong>no legal move</strong> loses. Blue moves first. On 3×3
+          the first player wins; on 4×4 and 5×5 perfect play never ends. The computer has solved every position;
+          with hints on, each move is marked <strong class="win-t">win</strong>,
+          <strong class="draw-t">draw</strong> or <strong class="lose-t">loss</strong> with the plies left.
+        </p>
+      </header>
+
+      <div id="wrap">
+        <div class="stage">
+          <div class="controls">
+            <label class="sel">board <select id="sizeSel"><option value="3">3×3</option><option value="4">4×4</option></select></label>
+            <label class="sel">you drive
+              <select id="youSel">
+                <option value="0">Blue (first)</option>
+                <option value="1">Red (second)</option>
+              </select>
+            </label>
+            <label class="sel chk"><input type="checkbox" id="hints" checked /> hints</label>
+            <button id="undo">Undo</button>
+            <button id="newgame" class="primary">New game</button>
+          </div>
+          <div id="boardwrap"><svg id="board" role="img" aria-label="Dodgem board"></svg></div>
+          <div id="status" aria-live="polite"></div>
+          <div id="moves" class="fine"></div>
+        </div>
+        <div class="side">
+          <h3>solved boards</h3>
+          <div class="panel" id="boards"></div>
+          <h3>1996 claims, re-checked</h3>
+          <div class="panel" id="checks"></div>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h2>How the computer knows</h2>
+        <p>
+          A position is where every car stands plus whose turn it is. Cars never come back, so the number of cars
+          on the board only goes down: positions split into layers by (Blue cars, Red cars), and each layer only
+          moves into itself or into a layer with one car fewer. Solving the layers from the emptiest up, each one is
+          a small retrograde analysis: start from what is already known, walk moves <em>backwards</em>, mark a
+          position won as soon as one move reaches a lost position and lost once every move reaches a won one.
+          Whatever is never marked is a draw — both sides can shuffle forever and neither can force a finish.
+          The 5×5 board has 240 million positions (counting the side to move) and takes a few minutes in Node; the
+          page solves 3×3 and 4×4 on the spot.
+        </p>
+        <h2>What did not match</h2>
+        <p id="mismatch"></p>
+      </section>
+
+      <footer>
+        <p>
+          Built by <a href="https://sen.ltd/">SEN LLC</a>. TypeScript, no runtime dependencies. Sources:
+          <a href="https://www.ics.uci.edu/~eppstein/cgt/dodgem.html">the 1996 rec.games.abstract thread</a>
+          (archived by David Eppstein), <em>Winning Ways</em> and the GamesCrafters figures quoted on
+          <a href="https://en.wikipedia.org/wiki/Dodgem">Wikipedia</a>.
+          <a href="https://github.com/sen-ltd/dodgem">Source</a>.
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

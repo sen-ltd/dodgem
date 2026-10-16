@@ -1,0 +1,94 @@
+:root {
+  --bg: #151412;
+  --panel: #1f1d1a;
+  --panel-2: #2a2723;
+  --ink: #efe9df;
+  --dim: #a39a8c;
+  --line: #3b3630;
+  --v: #5cc8d6;
+  --pin: #efe2c6;
+  --h: #e8a15a;
+  --gold: #f3d49b;
+  --good: #7ddf9a;
+  --bad: #ef6b7b;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); }
+body {
+  font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', sans-serif;
+}
+main { max-width: 1180px; margin: 0 auto; padding: 32px 24px 48px; }
+h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+h1 span { color: var(--h); font-weight: 600; margin-left: 6px; }
+.sub { color: var(--dim); max-width: 78ch; margin: 0 0 24px; }
+.sub strong { color: var(--ink); font-weight: 600; }
+strong.v { color: var(--v); }
+strong.h { color: var(--h); }
+.win-t { color: var(--good); }
+.lose-t { color: var(--bad); }
+#wrap { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+.stage { flex: 1 1 460px; min-width: 0; }
+.side { flex: 0 1 470px; min-width: 300px; }
+h3 {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--dim); font-weight: 600; margin: 0 0 10px;
+}
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.sel { color: var(--dim); font-size: 13px; display: inline-flex; gap: 6px; align-items: center; }
+.chk { cursor: pointer; }
+select, button {
+  font: inherit; font-size: 13px; color: var(--ink); background: var(--panel-2);
+  border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; cursor: pointer;
+}
+button:hover, select:hover { border-color: var(--dim); }
+button.primary { background: var(--h); color: #1a120a; border-color: var(--h); font-weight: 600; }
+#boardwrap {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px; max-width: 640px;
+}
+#status { min-height: 26px; margin-top: 10px; color: var(--dim); }
+#status.good { color: var(--good); }
+#status.bad { color: var(--bad); }
+.panel {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 16px; margin-bottom: 18px;
+}
+.panel dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 14px; margin: 0 0 10px; }
+.panel dt { color: var(--dim); font-size: 13px; }
+.panel dd { margin: 0; font-variant-numeric: tabular-nums; }
+.fine { color: var(--dim); font-size: 12.5px; margin: 8px 0 0; }
+.notes { max-width: 78ch; margin-top: 36px; color: var(--dim); }
+.notes h2 { color: var(--ink); font-size: 19px; margin: 26px 0 8px; }
+.notes strong { color: var(--ink); }
+footer { margin-top: 40px; color: var(--dim); font-size: 13px; }
+footer a, .notes a { color: var(--v); }
+.draw-t { color: var(--gold); }
+#board .cell { fill: #24221e; stroke: #3b3630; stroke-width: 1.5; }
+#board .exit { fill: none; stroke: #3b3630; stroke-dasharray: 5 4; stroke-width: 1.2; }
+#board .exitlbl { fill: var(--dim); font-size: 12px; }
+#board .car { stroke-width: 2; cursor: default; }
+#board .car.blue { fill: #2f7f8a; stroke: var(--v); }
+#board .car.red { fill: #8c3a45; stroke: var(--bad); }
+#board .car.mine { cursor: pointer; }
+#board .car.sel { stroke: #fff; stroke-width: 3; }
+#board .car.last { stroke-dasharray: 5 3; }
+#board .arrow { fill: rgba(255, 255, 255, 0.75); pointer-events: none; }
+#board .tgt { cursor: pointer; stroke-width: 2.5; fill-opacity: 0.22; }
+#board .tgt.win { stroke: var(--good); fill: var(--good); }
+#board .tgt.draw { stroke: var(--gold); fill: var(--gold); }
+#board .tgt.loss { stroke: var(--bad); fill: var(--bad); }
+#board .tgt.plain { stroke: var(--dim); fill: var(--dim); }
+#board .tgtlbl { font-size: 13px; font-weight: 600; pointer-events: none; font-variant-numeric: tabular-nums; }
+#board .tgtlbl.win { fill: var(--good); }
+#board .tgtlbl.draw { fill: var(--gold); }
+#board .tgtlbl.loss { fill: var(--bad); }
+table.t { border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; width: 100%; }
+table.t th { color: var(--dim); font-weight: 500; text-align: right; padding: 2px 6px; }
+table.t td { text-align: right; padding: 1px 6px; }
+table.t td:first-child, table.t th:first-child { text-align: left; }
+.ok { color: var(--good); }
+.ng { color: var(--h); }
+ul.checks { margin: 0; padding-left: 18px; }
+ul.checks li { margin: 4px 0; }
+code { font-size: 12.5px; color: var(--pin); }
+#board { width: 100%; height: auto; display: block; user-select: none; max-height: 62vh; }

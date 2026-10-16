@@ -1,0 +1,619 @@
+{
+ "boards": [
+  {
+   "n": 3,
+   "states": 2846,
+   "positions": {
+    "all": 1423,
+    "bothOn": 1332
+   },
+   "start": {
+    "val": "win",
+    "dep": 19
+   },
+   "reachable": {
+    "all": {
+     "win": 1123,
+     "loss": 840,
+     "draw": 0
+    },
+    "live": {
+     "win": 1115,
+     "loss": 750,
+     "draw": 0
+    },
+    "over": {
+     "win": 8,
+     "loss": 90,
+     "draw": 0
+    },
+    "plies": 16
+   },
+   "byTurnBothOn": {
+    "blue": {
+     "win": 803,
+     "loss": 529,
+     "draw": 0
+    },
+    "red": {
+     "win": 803,
+     "loss": 529,
+     "draw": 0
+    }
+   },
+   "maxDepth": 21,
+   "solveMs": 13,
+   "kinds": {
+    "R": 523,
+    "P": 6,
+    "N": 280,
+    "L": 523
+   },
+   "openings": [
+    {
+     "from": 0,
+     "to": 1,
+     "val": "win",
+     "dep": 19,
+     "dj": "c1-c2"
+    },
+    {
+     "from": 3,
+     "to": 4,
+     "val": "loss",
+     "dep": 18,
+     "dj": "b1-b2"
+    },
+    {
+     "from": 3,
+     "to": 6,
+     "val": "loss",
+     "dep": 16,
+     "dj": "b1-a1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "states": 555986,
+   "positions": {
+    "all": 277993,
+    "bothOn": 276600
+   },
+   "start": {
+    "val": "draw",
+    "dep": 0
+   },
+   "reachable": {
+    "all": {
+     "win": 209489,
+     "loss": 149130,
+     "draw": 35281
+    },
+    "live": {
+     "win": 209285,
+     "loss": 147738,
+     "draw": 35281
+    },
+    "over": {
+     "win": 204,
+     "loss": 1392,
+     "draw": 0
+    },
+    "plies": 28
+   },
+   "byTurnBothOn": {
+    "blue": {
+     "win": 146851,
+     "loss": 101339,
+     "draw": 28410
+    },
+    "red": {
+     "win": 146851,
+     "loss": 101339,
+     "draw": 28410
+    }
+   },
+   "maxDepth": 42,
+   "solveMs": 859,
+   "kinds": {
+    "R": 100944,
+    "N": 28921,
+    "L": 100944,
+    "P": 14,
+    "draw(BD)": 16986,
+    "draw(DR)": 16986,
+    "draw(DD)": 11043,
+    "draw(DB)": 381,
+    "draw(RD)": 381
+   },
+   "openings": [
+    {
+     "from": 0,
+     "to": 1,
+     "val": "draw",
+     "dep": 1,
+     "dj": "d1-d2"
+    },
+    {
+     "from": 4,
+     "to": 5,
+     "val": "draw",
+     "dep": 1,
+     "dj": "c1-c2"
+    },
+    {
+     "from": 8,
+     "to": 9,
+     "val": "draw",
+     "dep": 1,
+     "dj": "b1-b2"
+    },
+    {
+     "from": 8,
+     "to": 12,
+     "val": "loss",
+     "dep": 38,
+     "dj": "b1-a1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "states": 240060402,
+   "positions": {
+    "all": 120030201,
+    "bothOn": 119999650
+   },
+   "start": {
+    "val": "draw",
+    "dep": 0
+   },
+   "reachable": {
+    "all": {
+     "win": 66585136,
+     "loss": 45019609,
+     "draw": 52703322
+    },
+    "live": {
+     "win": 66579542,
+     "loss": 44989059,
+     "draw": 52703322
+    },
+    "over": {
+     "win": 5594,
+     "loss": 30550,
+     "draw": 0
+    },
+    "plies": 45
+   },
+   "byTurnBothOn": {
+    "blue": {
+     "win": 46470409,
+     "loss": 30701329,
+     "draw": 42827912
+    },
+    "red": {
+     "win": 46470409,
+     "loss": 30701329,
+     "draw": 42827912
+    }
+   },
+   "maxDepth": 81,
+   "solveMs": 322904,
+   "kinds": {
+    "R": 30689786,
+    "N": 5547787,
+    "L": 30689786,
+    "P": 36,
+    "draw(DR)": 10232836,
+    "draw(BD)": 10232836,
+    "draw(DD)": 32583569,
+    "draw(DB)": 11507,
+    "draw(RD)": 11507
+   },
+   "openings": [
+    {
+     "from": 0,
+     "to": 1,
+     "val": "draw",
+     "dep": 1,
+     "dj": "e1-e2"
+    },
+    {
+     "from": 5,
+     "to": 6,
+     "val": "draw",
+     "dep": 1,
+     "dj": "d1-d2"
+    },
+    {
+     "from": 10,
+     "to": 11,
+     "val": "draw",
+     "dep": 1,
+     "dj": "c1-c2"
+    },
+    {
+     "from": 15,
+     "to": 16,
+     "val": "draw",
+     "dep": 1,
+     "dj": "b1-b2"
+    },
+    {
+     "from": 15,
+     "to": 20,
+     "val": "draw",
+     "dep": 1,
+     "dj": "b1-a1"
+    }
+   ]
+  }
+ ],
+ "checks": {
+  "winningWays3": {
+   "val": "win",
+   "dep": 19
+  },
+  "gamescrafters": {
+   "claimed": {
+    "reachable": 1963,
+    "win": 1123,
+    "loss": 840,
+    "draw": 0
+   },
+   "got": {
+    "reachable": 1963,
+    "win": 1123,
+    "loss": 840,
+    "draw": 0
+   }
+  },
+  "fleury": {
+   "claimed": 666,
+   "got": 666
+  },
+  "ericksonCounts": {
+   "2": {
+    "claimed": 21,
+    "got": 21
+   },
+   "3": {
+    "claimed": 1495,
+    "got": 1423
+   },
+   "4": {
+    "claimed": 303433,
+    "got": 277993
+   },
+   "5": {
+    "claimed": 197841801,
+    "got": 120030201
+   }
+  },
+  "ericksonP": {
+   "claimedCount": 6,
+   "got": 6,
+   "diagrams": [
+    {
+     "diagram": [
+      ". > >",
+      ". . ^",
+      ". . ."
+     ],
+     "blueFirst": {
+      "val": 2,
+      "dep": 4
+     },
+     "redFirst": {
+      "val": 2,
+      "dep": 6
+     }
+    },
+    {
+     "diagram": [
+      "> . .",
+      "^ . .",
+      ". . ."
+     ],
+     "blueFirst": {
+      "val": 2,
+      "dep": 4
+     },
+     "redFirst": {
+      "val": 2,
+      "dep": 6
+     }
+    },
+    {
+     "diagram": [
+      "> > .",
+      ". . ^",
+      ". . ^"
+     ],
+     "blueFirst": {
+      "val": 1,
+      "dep": 13
+     },
+     "redFirst": {
+      "val": 1,
+      "dep": 13
+     }
+    }
+   ]
+  },
+  "desJardins4": {
+   "start": {
+    "val": "draw",
+    "dep": 0
+   },
+   "simple": {
+    "val": 3,
+    "dep": 0
+   },
+   "b1a1": {
+    "from": 8,
+    "to": 12,
+    "val": "loss",
+    "dep": 38,
+    "dj": "b1-a1"
+   },
+   "line": [
+    {
+     "ply": 1,
+     "text": "d1-d2",
+     "played": "d1-d2",
+     "legal": true,
+     "drawing": 3,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 2,
+     "text": "a4-b4",
+     "played": "a4-b4",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 3,
+     "text": "d2-d3",
+     "played": "d2-d3",
+     "legal": true,
+     "drawing": 2,
+     "value": "win",
+     "only": false
+    },
+    {
+     "ply": 4,
+     "text": "b4-c4",
+     "played": "b4-c4",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 5,
+     "text": "d3-d4",
+     "played": "d3-d4",
+     "legal": true,
+     "drawing": 4,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 6,
+     "text": "a3-b3",
+     "played": "a3-b3",
+     "legal": true,
+     "drawing": 3,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 7,
+     "text": "c1-c2",
+     "played": "c1-c2",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 8,
+     "text": "c4-c3!",
+     "played": "c4-c3!",
+     "legal": true,
+     "drawing": 1,
+     "value": "draw",
+     "only": true
+    },
+    {
+     "ply": 9,
+     "text": "b1-b2",
+     "played": "b1-b2",
+     "legal": true,
+     "drawing": 5,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 10,
+     "text": "a2-a3!",
+     "played": "a2-a3!",
+     "legal": true,
+     "drawing": 1,
+     "value": "draw",
+     "only": true
+    },
+    {
+     "ply": 11,
+     "text": "c2-d2",
+     "played": "c2-d2",
+     "legal": true,
+     "drawing": 4,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 12,
+     "text": "c3-c2",
+     "played": "c3-c2",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 13,
+     "text": "d2-d3",
+     "played": "d2-d3",
+     "legal": true,
+     "drawing": 4,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 14,
+     "text": "a3-a2",
+     "played": "a3-a2",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 15,
+     "text": "d3-c3",
+     "played": "d3-c3",
+     "legal": true,
+     "drawing": 3,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 16,
+     "text": "a2-a3!",
+     "played": "a2-a3!",
+     "legal": true,
+     "drawing": 1,
+     "value": "draw",
+     "only": true
+    },
+    {
+     "ply": 17,
+     "text": "b2-a2",
+     "played": "b2-a2",
+     "legal": true,
+     "drawing": 5,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 18,
+     "text": "b3-b2",
+     "played": "b3-b2",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 19,
+     "text": "c3-c4",
+     "played": "c3-c4",
+     "legal": true,
+     "drawing": 5,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 20,
+     "text": "c2-c1",
+     "played": "c2-c1",
+     "legal": true,
+     "drawing": 3,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 21,
+     "text": "d4-off",
+     "played": "d4-off",
+     "legal": true,
+     "drawing": 3,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 22,
+     "text": "c1-c2",
+     "played": "c1-c2",
+     "legal": true,
+     "drawing": 2,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 23,
+     "text": "d3-off",
+     "played": "c4-off",
+     "legal": false,
+     "drawing": 3,
+     "value": "draw",
+     "only": false
+    },
+    {
+     "ply": 24,
+     "text": "b2-b3",
+     "played": "b2-b3",
+     "legal": true,
+     "drawing": 1,
+     "value": "draw",
+     "only": false
+    }
+   ],
+   "replies": [
+    {
+     "dj": "a2-b2",
+     "val": "draw",
+     "dep": 1
+    },
+    {
+     "dj": "a2-a1",
+     "val": "loss",
+     "dep": 32
+    },
+    {
+     "dj": "a3-b3",
+     "val": "draw",
+     "dep": 1
+    },
+    {
+     "dj": "a4-b4",
+     "val": "loss",
+     "dep": 38
+    }
+   ]
+  },
+  "desJardins5": {
+   "start": {
+    "val": "draw",
+    "dep": 0
+   },
+   "b1a1": {
+    "from": 15,
+    "to": 20,
+    "val": "draw",
+    "dep": 1,
+    "dj": "b1-a1"
+   },
+   "drawShareBlueToMove": 0.35690030762589725,
+   "drawShareReachable": 0.3207591870702246
+  }
+ }
+}

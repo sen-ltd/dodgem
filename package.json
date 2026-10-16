@@ -1,0 +1,23 @@
+{
+  "name": "dodgem",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dodgem (Colin Vout's car game) in the browser against a perfect player, with the 3×3, 4×4 and 5×5 boards solved by retrograde analysis and the 1996 rec.games.abstract claims re-checked. TypeScript, no runtime deps.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 4173",
+    "test": "vitest run",
+    "stats": "node tools/stats.mts 3 && node tools/stats.mts 4 && node --max-old-space-size=20000 tools/stats.mts 5",
+    "literature": "node tools/literature.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  },
+  "license": "MIT"
+}

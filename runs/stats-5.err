@@ -1,0 +1,44 @@
+layer (0,0) 2 states 0 ms
+layer (0,1) 50 states 0 ms
+layer (1,0) 50 states 0 ms
+layer (0,2) 600 states 0 ms
+layer (1,1) 1200 states 6 ms
+layer (2,0) 600 states 0 ms
+layer (0,3) 4600 states 1 ms
+layer (1,2) 13800 states 39 ms
+layer (2,1) 13800 states 29 ms
+layer (3,0) 4600 states 1 ms
+layer (0,4) 25300 states 2 ms
+layer (1,3) 101200 states 164 ms
+layer (2,2) 151800 states 172 ms
+layer (3,1) 101200 states 98 ms
+layer (4,0) 25300 states 1 ms
+layer (1,4) 531300 states 890 ms
+layer (2,3) 1062600 states 1391 ms
+layer (3,2) 1062600 states 1296 ms
+layer (4,1) 531300 states 498 ms
+layer (2,4) 5313000 states 6653 ms
+layer (3,3) 7084000 states 10368 ms
+layer (4,2) 5313000 states 6568 ms
+layer (3,4) 33649000 states 45595 ms
+layer (4,3) 33649000 states 45563 ms
+layer (4,4) 151420500 states 203562 ms
+      629.34 real       602.13 user         8.57 sys
+           927678464  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              911793  page reclaims
+                 483  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+              289503  involuntary context switches
+       2759656780267  instructions retired
+        737726702699  cycles elapsed
+          2411722960  peak memory footprint
+exit=0

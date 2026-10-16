@@ -1,0 +1,165 @@
+{
+ "n": 3,
+ "cars": 2,
+ "solveMs": 13,
+ "layerTimes": [
+  {
+   "a": 0,
+   "b": 0,
+   "states": 2,
+   "ms": 0
+  },
+  {
+   "a": 0,
+   "b": 1,
+   "states": 18,
+   "ms": 0
+  },
+  {
+   "a": 1,
+   "b": 0,
+   "states": 18,
+   "ms": 0
+  },
+  {
+   "a": 0,
+   "b": 2,
+   "states": 72,
+   "ms": 0
+  },
+  {
+   "a": 1,
+   "b": 1,
+   "states": 144,
+   "ms": 2
+  },
+  {
+   "a": 2,
+   "b": 0,
+   "states": 72,
+   "ms": 0
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "states": 504,
+   "ms": 3
+  },
+  {
+   "a": 2,
+   "b": 1,
+   "states": 504,
+   "ms": 1
+  },
+  {
+   "a": 2,
+   "b": 2,
+   "states": 1512,
+   "ms": 5
+  }
+ ],
+ "states": 2846,
+ "positions": {
+  "all": 1423,
+  "bothOn": 1332
+ },
+ "byTurn": {
+  "blue": {
+   "win": 848,
+   "loss": 575,
+   "draw": 0
+  },
+  "red": {
+   "win": 848,
+   "loss": 575,
+   "draw": 0
+  }
+ },
+ "byTurnBothOn": {
+  "blue": {
+   "win": 803,
+   "loss": 529,
+   "draw": 0
+  },
+  "red": {
+   "win": 803,
+   "loss": 529,
+   "draw": 0
+  }
+ },
+ "maxDepth": 21,
+ "kinds": {
+  "R": 523,
+  "P": 6,
+  "N": 280,
+  "L": 523
+ },
+ "pPositions": [
+  {
+   "B": 1,
+   "R": 8
+  },
+  {
+   "B": 128,
+   "R": 256
+  },
+  {
+   "B": 2,
+   "R": 36
+  },
+  {
+   "B": 6,
+   "R": 32
+  },
+  {
+   "B": 3,
+   "R": 24
+  },
+  {
+   "B": 144,
+   "R": 288
+  }
+ ],
+ "reachable": {
+  "all": {
+   "win": 1123,
+   "loss": 840,
+   "draw": 0
+  },
+  "live": {
+   "win": 1115,
+   "loss": 750,
+   "draw": 0
+  },
+  "over": {
+   "win": 8,
+   "loss": 90,
+   "draw": 0
+  },
+  "plies": 16
+ },
+ "start": {
+  "val": "win",
+  "dep": 19
+ },
+ "openings": [
+  {
+   "from": 0,
+   "to": 1,
+   "val": "win",
+   "dep": 19
+  },
+  {
+   "from": 3,
+   "to": 4,
+   "val": "loss",
+   "dep": 18
+  },
+  {
+   "from": 3,
+   "to": 6,
+   "val": "loss",
+   "dep": 16
+  }
+ ]
+}
